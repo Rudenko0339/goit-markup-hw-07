@@ -15,17 +15,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
-}
-.soc-link:hover,
-.soc-link:focus {
-  background-color: var(--acсent-color);
-  outline: none;
-}
-
-.soc-link:hover .soc-icon,
-.soc-link:focus .soc-icon {
-  fill: var(--primary-white-color);
-  outline: none;
+  &:hover,
+  &:focus {
+    background-color: var(--acсent-color);
+    outline: none;
+  }
 }
 .soc-item {
   list-style-type: none;
@@ -41,8 +35,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
+  .soc-link:hover &,
+  .soc-link:focus & {
+    fill: var(--primary-white-color);
+    outline: none;
+  }
 }
-
 .staff {
   font-weight: 700;
   font-size: 36px;
@@ -56,6 +54,7 @@
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  width: calc((100% - 90px) / 4);
 }
 .staff-list {
   display: flex;
@@ -81,7 +80,4 @@
 .staff-id {
   padding-bottom: 30px;
   padding-top: 30px;
-}
-.staff-item {
-  width: calc((100% - 90px) / 4);
 }

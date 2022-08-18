@@ -27,16 +27,17 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
+  &:hover,
+  &:focus {
+    color: var(--acсent-color);
+    outline: none;
+  }
 }
 
 .address-list :not(:last-child) {
   margin-bottom: 9px;
 }
-.address-link:hover,
-.address-link:focus {
-  color: var(--acсent-color);
-  outline: none;
-}
+
 .mail,
 .tel {
   color: rgba(255, 255, 255, 0.6);
@@ -47,46 +48,4 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
-
-.join {
-  margin-left: 70px;
-}
-.footer-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-.footer-list :not(:last-child) {
-  margin-right: 10px;
-}
-
-.footer-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-}
-.footer-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: var(--primary-white-color);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
-}
-.footer-link:hover,
-.footer-link:focus {
-  background-color: var(--acсent-color);
-  outline: none;
 }

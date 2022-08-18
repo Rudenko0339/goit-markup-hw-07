@@ -11,8 +11,10 @@
   letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
+  &:focus {
+    border-color: var(--acсent-color);
+  }
 }
-
 .check-text {
   display: flex;
   align-items: center;
@@ -23,34 +25,30 @@
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 0;
-}
-
-.check-text::before {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 15px;
-  border-radius: 2px;
-  margin-right: 7px;
-  border: 2px solid #212121;
-}
-.modal-check:checked + .check-text::before {
-  background-color: var(--acсent-color);
-  border: none;
-  background-image: url(../images/Check.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0ms;
-}
-.modal-check:focus + .check-text::before {
-  border-color: var(--acсent-color);
-  outline: none;
-}
-.modal-field + .check {
-  margin-bottom: 0;
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    margin-right: 7px;
+    border: 2px solid #212121;
+  }
+  .modal-check:focus + &::before {
+    border-color: var(--acсent-color);
+    outline: none;
+  }
+  .modal-check:checked + &::before {
+    background-color: var(--acсent-color);
+    border: none;
+    background-image: url(../images/Check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+  }
 }
 .check-link {
   display: flex;
