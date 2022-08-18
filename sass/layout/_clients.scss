@@ -26,17 +26,13 @@
     outline: none;
   }
 }
-
 .client-list {
   display: flex;
   gap: 30px;
 }
 .client-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  @include font(36px, 1.17, 700, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 50px;
 }

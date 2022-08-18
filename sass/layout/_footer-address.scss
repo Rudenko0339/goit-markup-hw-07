@@ -8,24 +8,20 @@
 }
 
 .address__logo {
+  @include font(26px, 1.19, 700, 0.03em);
   display: inline-block;
   color: #ffffff;
   font-family: "raleway";
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   text-decoration: none;
 }
 .address__logo--blue {
   color: var(--acсent-color);
 }
 .address__link {
+  @include font(14px, 1.71, null, 0.03em);
   color: #ffffff;
   font-family: "roboto";
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   text-decoration: none;
   display: inline-block;
   transition-property: color;

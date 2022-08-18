@@ -1,11 +1,9 @@
 .hero-btn {
+  @include font(16px, 1.88, 700, 0.06em);
   color: #ffffff;
   background-color: #2196f3;
   border: none;
   font-family: "Roboto", "sans-serif";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
   border-radius: 4px;
   min-width: 216px;
   padding: 10px 32px;
@@ -19,6 +17,7 @@
   }
 }
 .mail__btn {
+  @include font(16px, 1.88, 700, 0.06em);
   display: inline-flex;
   align-items: center;
   text-align: center;
@@ -29,12 +28,8 @@
   background-color: var(--acсent-color);
   border: none;
   font-family: "Roboto", "sans-serif";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
   border-radius: 4px;
   min-width: 200px;
-  letter-spacing: 0.06em;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -47,19 +42,16 @@
   }
 }
 .modal-btn {
+  @include font(16px, 1.88, 700, 0.06em);
   display: block;
   color: #ffffff;
   background-color: #2196f3;
   border: none;
   font-family: "Roboto", "sans-serif";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
   border-radius: 4px;
   min-width: 200px;
   padding: 10px 52px;
   text-align: center;
-  letter-spacing: 0.06em;
   margin: 30px auto 0;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -74,13 +66,10 @@
   }
 }
 .button-portfolio {
+  @include font(16px, 1.63, 500, 0.03em);
   color: var(--primary-text-color);
   font-family: inherit;
   background-color: #f5f4fa;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
   border: none;
   padding: 6px 22px;
   border-radius: 4px;

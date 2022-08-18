@@ -1,13 +1,9 @@
 .header-link {
+  @include font(14px, 1.14, 500, 0.02em);
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   color: #212121;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -52,12 +48,10 @@
   display: flex;
 }
 .header-logo {
+  @include font(26px, 1.19, 700, 0.03em);
   color: #000000;
   font-family: "raleway";
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   text-decoration: none;
 }
 

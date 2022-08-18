@@ -12,11 +12,8 @@
   background-color: #c4c4c4;
 }
 .hero-title {
+  @include font(44px, 1.5, 900, 0.06em);
   color: var(--primary-white-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.5;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
   max-width: 696px;

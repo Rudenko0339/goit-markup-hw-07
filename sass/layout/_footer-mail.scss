@@ -3,10 +3,7 @@
 }
 
 .mail__text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 700, 0.03em);
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
@@ -15,6 +12,7 @@
   margin-left: 12px;
 }
 .mail__input {
+  @include font(16px, 1.25, null, 0.03em);
   box-sizing: border-box;
   width: 358px;
   min-height: 50px;
@@ -22,11 +20,7 @@
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
   align-items: center;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
 }

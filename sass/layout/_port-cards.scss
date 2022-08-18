@@ -8,14 +8,11 @@
   overflow: hidden;
 }
 .hidden-text {
+  @include font(18px, 1.56, null, 0.03em);
   position: absolute;
   top: 0pt;
   left: 0px;
   height: 100%;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
   padding: 63px 24px;
   color: var(--primary-white-color);
   background-color: rgba(33, 150, 243, 0.9);
@@ -25,19 +22,14 @@
   transition-delay: 0ms;
 }
 .picture-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(18px, 2, 700, 0.06em);
   margin-bottom: 4px;
   text-decoration: none;
   color: var(--primary-text-color);
 }
 .picture-text {
+  @include font(16px, 1.88, null, 0.03em);
   color: var(--title-text-color);
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 .card-content {
