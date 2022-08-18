@@ -1,7 +1,7 @@
-.join {
+.footer__join {
   margin-left: 70px;
 }
-.footer-text {
+.join__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -11,7 +11,7 @@
   margin-bottom: 20px;
 }
 
-.footer-list {
+.join__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@
     margin-right: 10px;
   }
 }
-.footer-link {
+.join__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;

@@ -51,7 +51,7 @@
 .container-header {
   display: flex;
 }
-.logo {
+.header-logo {
   color: #000000;
   font-family: "raleway";
   font-style: normal;
@@ -60,9 +60,7 @@
   line-height: 1.19;
   text-decoration: none;
 }
-.blue-logo {
-  color: var(--acсent-color);
-}
+
 .header {
   align-items: center;
   border-bottom: 1px solid #ececec;

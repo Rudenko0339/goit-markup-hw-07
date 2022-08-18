@@ -3,7 +3,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-logo {
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.address__logo {
   display: inline-block;
   color: #ffffff;
   font-family: "raleway";
@@ -12,10 +16,11 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  margin-bottom: 20px;
 }
-
-.address-link {
+.address__logo--blue {
+  color: var(--acсent-color);
+}
+.address__link {
   color: #ffffff;
   font-family: "roboto";
   font-size: 14px;
@@ -33,13 +38,11 @@
     outline: none;
   }
 }
-
-.address-list :not(:last-child) {
+.address__list :not(:last-child) {
   margin-bottom: 9px;
 }
-
-.mail,
-.tel {
+.address__mail,
+.address__tel {
   color: rgba(255, 255, 255, 0.6);
   font-family: "Roboto";
   font-style: normal;
