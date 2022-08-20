@@ -13,10 +13,8 @@
     color: var(--acсent-color);
     outline: none;
   }
-  .current {
-    color: var(--acсent-color);
-  }
 }
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -32,6 +30,7 @@
 
 .current {
   position: relative;
+  color: var(--acсent-color);
   &::after {
     content: "";
     display: block;

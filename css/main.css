@@ -212,9 +212,6 @@ img {
   color: var(--acсent-color);
   outline: none;
 }
-.header-link .current {
-  color: var(--acсent-color);
-}
 
 .header-nav {
   display: flex;
@@ -232,6 +229,7 @@ img {
 
 .current {
   position: relative;
+  color: var(--acсent-color);
 }
 .current::after {
   content: "";
